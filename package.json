@@ -1,0 +1,20 @@
+{
+  "name": "boilerplate-tailwind-postcss-jit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "set TAILWIND_MODE=watch&postcss tailwind.css -o ./public/styles.css -w --verbose",
+    "production": "NODE_ENV=production postcss tailwind.css -o ./public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "cssnano": "^5.0.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15",
+    "win-node-env": "^0.4.0"
+  }
+}
